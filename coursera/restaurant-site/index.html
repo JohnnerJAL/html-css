@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, LLC - Our Menu</title>
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        /* Navbar styles */
+        #header-nav {
+            background-color: #8B0000; /* Deep red */
+            border-radius: 0;
+            border: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            padding: 15px 0;
+        }
+        
+        .navbar-brand h1 {
+            color: #FFF;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        }
+        
+        .navbar-brand a:hover, .navbar-brand a:focus {
+            text-decoration: none;
+        }
+        
+        #nav-list {
+            margin: 0 -15px;
+            background-color: #A52A2A; /* Brown-red */
+        }
+        
+        #nav-list li {
+            text-align: center;
+            border-bottom: 1px solid #8B0000;
+        }
+        
+        #nav-list li:last-child {
+            border-bottom: none;
+        }
+        
+        #nav-list a {
+            color: #FFF;
+            font-weight: bold;
+            padding: 15px;
+            display: block;
+            transition: background 0.3s;
+        }
+        
+        #nav-list a:hover {
+            background: #8B0000;
+            text-decoration: none;
+        }
+        
+        .navbar-header button.navbar-toggle {
+            border: 1px solid #FFF;
+        }
+        
+        .navbar-header .icon-bar {
+            background-color: #FFF;
+        }
+        
+        /* Main content */
+        #main-content {
+            padding: 15px;
+        }
+        
+        #main-heading {
+            margin-bottom: 30px;
+            color: #8B0000;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+        }
+        
+        .tall-section {
+            background-color: #F5F5F5;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            height: 1000px; /* Tall enough to require scrolling */
+        }
+        
+        .tall-section h3 {
+            margin-top: 0;
+            color: #8B0000;
+        }
+        
+        /* Optional section styles */
+        .menu-section {
+            background-color: #FFF8DC; /* Cornsilk */
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #E0D6B9;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: 700px;
+            overflow: hidden;
+        }
+        
+        .menu-section h3 {
+            margin-top: 0;
+            color: #8B0000;
+            text-align: center;
+        }
+        
+        .back-to-top {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            color: #8B0000;
+            font-weight: bold;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 767px) {
+            .tall-section, .menu-section {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="index.html"><h1>Food, LLC</h1></a>
+                </div>
+                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+                    <li><a href="#chicken">Chicken</a></li>
+                    <li><a href="#beef">Beef</a></li>
+                    <li><a href="#sushi">Sushi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div id="main-content" class="container">
+        <h1 id="main-heading" class="text-center">Our Menu</h1>
+        
+        <!-- Required Tall Section -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tall-section">
+                    <h3>Delicious Food Selection</h3>
+                    <p>At Food, LLC, we pride ourselves on offering the finest culinary experiences. Our chefs use only the freshest ingredients to create dishes that delight both the eye and the palate. From farm-fresh vegetables to premium meats and sustainably sourced seafood, every ingredient is carefully selected to ensure the highest quality.</p>
+                    
+                    <p>Our menu changes seasonally to take advantage of the best produce available. We believe in supporting local farmers and producers, which is why over 80% of our ingredients come from within a 100-mile radius of our restaurant. This commitment to local sourcing not only ensures freshness but also helps reduce our environmental footprint.</p>
+                    
+                    <p>Whether you're joining us for a business lunch, a romantic dinner, or a family celebration, our diverse menu offers something for everyone. We cater to various dietary preferences including vegetarian, vegan, gluten-free, and dairy-free options. Our knowledgeable staff is always available to help you navigate the menu and make selections that suit your tastes and dietary needs.</p>
+                    
+                    <p>Each dish is prepared with meticulous attention to detail. Our chefs combine traditional techniques with innovative approaches to create unique flavor profiles that will surprise and delight you. Presentation is equally important - every plate that leaves our kitchen is a work of art designed to enhance your dining experience.</p>
+                    
+                    <p>Beyond our regular menu, we offer daily specials that showcase seasonal ingredients at their peak. Our pastry chef creates exquisite desserts that provide the perfect ending to your meal. We also feature an extensive wine list carefully curated to complement our dishes, as well as craft cocktails made with premium spirits and house-made infusions.</p>
+                    
+                    <p>We invite you to explore our menu and discover why Food, LLC has become a destination for food lovers. Whether you're trying us for the first time or are a regular guest, we promise an exceptional dining experience that will keep you coming back for more.</p>
+                    
+                    <p>Our commitment to excellence extends beyond the kitchen. We've designed our dining space to be warm and inviting, with comfortable seating and ambient lighting that creates the perfect atmosphere for any occasion. Our service team is dedicated to providing attentive, knowledgeable service without being intrusive.</p>
+                    
+                    <p>At Food, LLC, we believe that dining should be an experience to remember. From the moment you walk through our doors until the last bite of dessert, every detail is carefully considered to ensure your complete satisfaction. We look forward to serving you soon!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional Sections (Ungraded) -->
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="chicken" class="menu-section">
+                    <h3>Chicken</h3>
+                    <p>Our chicken dishes are prepared with free-range, organic chicken that is hormone and antibiotic-free. We source our poultry from local farms that prioritize animal welfare and sustainable practices.</p>
+                    
+                    <p>Signature dishes include our Herb-Roasted Chicken with seasonal vegetables and natural jus, and the popular Chicken Piccata with lemon-caper sauce and garlic mashed potatoes. For those seeking something with a bit more spice, our Chipotle Chicken features a smoky marinade and is served with roasted corn salsa.</p>
+                    
+                    <p>We also offer a variety of chicken sandwiches for lunch service, including our famous Buttermilk Fried Chicken Sandwich with house-made pickles and spicy aioli. All chicken dishes can be modified to be gluten-free upon request.</p>
+                    
+                    <p>Our chefs use a variety of cooking techniques to bring out the best in chicken - from slow-roasting to grilling to sous-vide preparation. Each method is chosen to maximize flavor and tenderness while preserving the natural qualities of the meat.</p>
+                    
+                    <p>For those looking for lighter options, we offer several chicken salads featuring fresh, locally-sourced greens and vegetables. Our Mediterranean Chicken Salad combines grilled chicken with kalamata olives, feta cheese, tomatoes, cucumbers, and a lemon-herb vinaigrette.</p>
+                    
+                    <p>We believe in using the whole bird, which is why you'll find chicken stock as the base for many of our soups and sauces. This approach minimizes waste and maximizes flavor throughout our menu.</p>
+                    
+                    <a href="#main-heading" class="back-to-top">Back to Top ↑</a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div id="beef" class="menu-section">
+                    <h3>Beef</h3>
+                    <p>Our beef selection features premium cuts from grass-fed, pasture-raised cattle. We work closely with local ranchers who practice regenerative agriculture, ensuring the highest quality meat while supporting sustainable land management.</p>
+                    
+                    <p>The star of our beef offerings is our 28-day dry-aged Ribeye, served with roasted garlic compound butter and your choice of two sides. We also offer a classic Filet Mignon that is hand-cut daily and cooked to your exact specifications.</p>
+                    
+                    <p>For a more casual dining experience, try our Gourmet Burger made with a blend of brisket, chuck, and short rib. Topped with caramelized onions, aged cheddar, and our special sauce on a brioche bun, it's a customer favorite.</p>
+                    
+                    <p>Our Braised Short Ribs are slow-cooked for 8 hours until fork-tender, served with creamy polenta and seasonal vegetables. This dish showcases our commitment to using less expensive cuts transformed through time-honored cooking techniques.</p>
+                    
+                    <p>We offer several steakhouse classics including Beef Wellington for two, prepared with mushroom duxelles and wrapped in puff pastry. Our chefs carefully source the beef tenderloin for this dish, ensuring the perfect texture and flavor profile.</p>
+                    
+                    <p>All our beef dishes are accompanied by house-made sauces including béarnaise, red wine reduction, and green peppercorn. Our sides are thoughtfully selected to complement the richness of the beef, with options like truffle mashed potatoes, creamed spinach, and roasted root vegetables.</p>
+                    
+                    <a href="#main-heading" class="back-to-top">Back to Top ↑</a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div id="sushi" class="menu-section">
+                    <h3>Sushi</h3>
+                    <p>Our sushi program is led by Chef Hiroshi Tanaka, who brings 20 years of experience from Tokyo's finest sushi establishments. We use only the highest quality, sustainably sourced seafood that meets the standards of the Monterey Bay Aquarium Seafood Watch program.</p>
+                    
+                    <p>Our Nigiri selection features daily fresh catches that may include Bluefin Tuna, Hamachi, Scottish Salmon, and Japanese Sea Bass. Each piece is hand-formed and served with a touch of wasabi between the fish and rice - the traditional Tokyo style.</p>
+                    
+                    <p>Signature rolls include the Food LLC Special Roll with spicy tuna, avocado, and cucumber inside, topped with seared salmon, tobiko, and our special sauce. The Dragon Roll features eel and cucumber inside, topped with thinly sliced avocado to resemble dragon scales.</p>
+                    
+                    <p>For the purist, we offer a daily Omakase experience where Chef Tanaka selects the finest fish available and presents a progression of 8-10 pieces based on the customer's preferences. This chef's choice menu showcases the season's best offerings and the chef's creative vision.</p>
+                    
+                    <p>We also offer a variety of Japanese small plates including Edamame with sea salt, Gyoza with homemade dipping sauce, and Miso Soup made from scratch daily. Our tempura selection features seasonal vegetables and seafood in an airy, crisp batter.</p>
+                    
+                    <p>Our sushi rice is prepared with precision, using a specific blend of vinegars and cooked to exacting standards. The temperature and texture of the rice are carefully monitored throughout service to ensure consistency. We offer both traditional and brown rice options for all our sushi.</p>
+                    
+                    <a href="#main-heading" class="back-to-top">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
