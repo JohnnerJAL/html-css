@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.75em;
+    color: #333;
+}
+
+.row {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.section {
+    position: relative;
+    background-color: #e0e0e0;
+    border: 1px solid #000;
+    padding: 40px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 40px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#chicken {
+    background-color: #ffccbc;
+    color: #333;
+}
+
+#beef {
+    background-color: #e53935;
+    color: #fff;
+}
+
+#sushi {
+    background-color: #d4e157;
+    color: #333;
+}
+
+p {
+    color: #424242;
+    line-height: 1.5;
+}
+
+/* Desktop View (≥992px) */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+    .section {
+        margin: 0 10px 20px;
+    }
+}
+
+/* Tablet View (768px-991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
+    .section {
+        margin: 0 10px 20px;
+    }
+}
+
+/* Mobile View (≤767px) */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* Clear floats after columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
